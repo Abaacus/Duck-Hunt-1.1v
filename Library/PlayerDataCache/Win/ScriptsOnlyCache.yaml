@@ -76,53 +76,53 @@ ScriptsOnlyBuild:
     - Class: 109
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9696}
+      Script: {instanceID: 9700}
     - Class: 114
-      Script: {instanceID: 9704}
+      Script: {instanceID: 9708}
     - Class: 114
-      Script: {instanceID: 9782}
+      Script: {instanceID: 9784}
     - Class: 114
-      Script: {instanceID: 9898}
-    - Class: 114
-      Script: {instanceID: 9948}
+      Script: {instanceID: 9900}
     - Class: 114
       Script: {instanceID: 9950}
     - Class: 114
-      Script: {instanceID: 10280}
+      Script: {instanceID: 9952}
     - Class: 114
-      Script: {instanceID: 10296}
+      Script: {instanceID: 10282}
     - Class: 114
-      Script: {instanceID: 10302}
+      Script: {instanceID: 10298}
     - Class: 114
       Script: {instanceID: 10304}
     - Class: 114
-      Script: {instanceID: 10364}
+      Script: {instanceID: 10306}
     - Class: 114
-      Script: {instanceID: 10398}
+      Script: {instanceID: 10366}
     - Class: 114
-      Script: {instanceID: 10422}
+      Script: {instanceID: 10400}
     - Class: 114
-      Script: {instanceID: 10500}
+      Script: {instanceID: 10424}
     - Class: 114
-      Script: {instanceID: 10638}
+      Script: {instanceID: 10502}
     - Class: 114
-      Script: {instanceID: 10736}
+      Script: {instanceID: 10640}
     - Class: 114
-      Script: {instanceID: 10856}
+      Script: {instanceID: 10738}
     - Class: 114
-      Script: {instanceID: 10870}
+      Script: {instanceID: 10858}
     - Class: 114
-      Script: {instanceID: 10966}
+      Script: {instanceID: 10872}
     - Class: 114
-      Script: {instanceID: 10982}
+      Script: {instanceID: 10968}
     - Class: 114
-      Script: {instanceID: 11046}
+      Script: {instanceID: 10984}
     - Class: 114
-      Script: {instanceID: 11104}
+      Script: {instanceID: 11048}
     - Class: 114
-      Script: {instanceID: 11260}
+      Script: {instanceID: 11106}
     - Class: 114
-      Script: {instanceID: 11290}
+      Script: {instanceID: 11262}
+    - Class: 114
+      Script: {instanceID: 11292}
     - Class: 114
       Script: {instanceID: 11460}
     - Class: 115
@@ -174,7 +174,7 @@ ScriptsOnlyBuild:
     className: TMP_Dropdown
   - hash:
       serializedVersion: 2
-      Hash: 98979770ab902763816e5dcf68125b36
+      Hash: 008e26e36118208110ecfa1b3ac2f007
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: DuckBoundary
@@ -240,7 +240,7 @@ ScriptsOnlyBuild:
     className: TMP_InputField
   - hash:
       serializedVersion: 2
-      Hash: 5b305462ddc47c9af86cf735137152d7
+      Hash: dc3f3b3c95a3144b868c5b3e5e4d3618
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Hitbox
@@ -330,7 +330,7 @@ ScriptsOnlyBuild:
     className: ControlPlayableAsset
   - hash:
       serializedVersion: 2
-      Hash: 86d3b7bdbf590038a25a2d339ac54fbb
+      Hash: f6e6be1ab6cbc56e37480a2ed488a763
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Duck
@@ -396,7 +396,7 @@ ScriptsOnlyBuild:
     className: SignalTrack
   - hash:
       serializedVersion: 2
-      Hash: ad5b7600908c2e4ec73d20e8d7782077
+      Hash: 3f66da3d2a8817d1060b0dea3f8920c6
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameManager
@@ -637,4 +637,4 @@ ScriptsOnlyBuild:
   platform: 5
   scenePathNames:
   - Assets/Scenes/GameScene.unity
-  playerPath: D:/Unity Projects/Duck Hunt/Builds/Duck Hunt.exe
+  playerPath: D:/Unity Projects/Duck Hunt/Builds/DuckHunt - 1.1v/Duck Hunt.exe

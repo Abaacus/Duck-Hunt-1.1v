@@ -147,7 +147,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hit: 0
-  pointValue: 500
+  value: 500
 --- !u!50 &1320892537
 Rigidbody2D:
   serializedVersion: 4

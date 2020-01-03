@@ -2340,10 +2340,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58c39f37c523a1d4e9c2d919fe41a286, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  menuButtons:
+  menuPanels:
   - {fileID: 730166217}
   - {fileID: 762794263}
-  uiPanels:
+  gamePanels:
   - {fileID: 887232192}
   - {fileID: 607411885}
   scoreGUI: {fileID: 1894721131}

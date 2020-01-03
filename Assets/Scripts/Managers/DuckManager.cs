@@ -50,25 +50,25 @@ public class DuckManager : MonoBehaviour    // keeps track of the ducks flying a
             ducks.Add(Instantiate(duckPPrefab, newPos, Quaternion.identity).GetComponent<Duck>());
         }
 
-        while (ducks.Count != 0)
+        while (ducks.Count != 0)    // while there are still ducks alive, we check to see if the player has won, or lost
         {
-            foreach (Duck duck in ducks)
+            foreach (Duck duck in ducks)    // loops through the every duck in the duck list
             {
                 if (duck.duckState == DuckState.dead)
-                {
-                    Destroy(duck.gameObject);
-                    ducks.Remove(duck);
-                    break;
-                }
+                {   // if the duck is dead,
+                    Destroy(duck.gameObject);    // destroy the duck gameObject,
+                    ducks.Remove(duck); // and removes the duck from the duck list
+                    break;  // because we modified the list, we need to break the foreach loop 
+                }   // (two ducks can't die in the same frame anyways, so no problems will be created)
             }
 
-            if (bulletManager.outOfBullets)
+            if (bulletManager.outOfBullets) // if the player is out of bullets, they might have lost the game
             {
-                foreach (Duck duck in ducks)
-                {
+                foreach (Duck duck in ducks)    // we loop through all remaining ducks to see if they have
+                {   // already killed every duck, and are just waiting for them to hit the ground
                     if (duck.duckState == DuckState.alive)
-                    {
-                        gameManager.GameLost();
+                    {   // if we find a living duck, then the player has lost, as there is no way the player can kill that duck
+                        gameManager.GameLost(); // notify the gameManager that the player has lost, and break the loop
                         break;
                     }
                 }
@@ -77,12 +77,14 @@ public class DuckManager : MonoBehaviour    // keeps track of the ducks flying a
             yield return new WaitForEndOfFrame();
         }
 
-        gameManager.StartCoroutine(gameManager.EndWave());
+        gameManager.StartCoroutine(gameManager.EndWave());  // if there are no ducks left, end the current wave
     }
 
     public void RemoveAllDucks()    // this function kills all ducks and clears the duck array, it's used at the end of the game to clear the screen before returning to the menu
     {
-        while (ducks.Count > 0) // while there are still ducks in the ducks list...
+        StopAllCoroutines(); // first, if there are any spawnDuck coroutines running, stop them
+
+        while (ducks.Count > 0) // then, while there are still ducks in the ducks list...
         {
             Destroy(ducks[0].gameObject);   // destroy the first index's gameObject...
             ducks.Remove(ducks[0]); // then remove the first index in the list

@@ -36,21 +36,21 @@ public class JuiceManager : MonoBehaviour
         StartCoroutine(FlashScreen(flashDuration)); // starts the coroutine with a duration of flashDuration
     }
 
-    public void SpawnPointPopup(Hitbox hitbox)  // this func takes in a hitbox
+    public void SpawnPointPopup(Hitbox hitbox)  // this func takes in a hitbox and spawns in an appropriate popup for it's point value
     {
-        if (hitbox.pointValue == 500)
-        {
+        if (hitbox.value == 500)
+        {   // if the hitbox has a value of 500, spawn the 500 popup
             Instantiate(fiveOOPopup, hitbox.transform.position, Quaternion.identity);
         }
 
-        else if (hitbox.pointValue == 1000)
-        {
+        else if (hitbox.value == 1000)
+        {   // if the hitbox has a value of 1000, spawn the 1000 popup
             Instantiate(oneOOOPopup, hitbox.transform.position, Quaternion.identity);
         }
 
         else
-        {
-            Debug.LogWarning("No popup found for point value of: " + hitbox.pointValue);
+        {   // if the hitbox didn't have any of those values, debug a warning
+            Debug.LogWarning("No popup found for point value of: " + hitbox.value);
         }
     }
 
